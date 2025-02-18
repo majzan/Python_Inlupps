@@ -1,10 +1,12 @@
 import random
+import os
 import time
 
-#   clear_screen() är en funktion som rensar terminalen genom att skriva ut nya rader
+#   clear_screen() är en funktion som rensar terminalen 
 def clear_screen():
-    """Rensar terminalen genom att skriva ut nya rader."""
-    print("\n" * 50)
+    """Rensar terminalen."""
+    os.system('cls' if os.name == 'nt' else 'clear')
+clear_screen()
 
 
 #   generate_sequence() är en funktion som genererar en slumpmässig sekvens av siffror
