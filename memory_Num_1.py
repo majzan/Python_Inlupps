@@ -1,6 +1,19 @@
 import random
 import os
 import time
+#    Detta program är "Memory" spelet där spelaren ska memorera en sekvens av siffror och sedan ska ange sekvensen.
+#    Programmet innehåller flera funktioner som används för att generera sekvensen, räkna antal siffror på rätt plats
+#    och antal siffror som finns med i sekvensen.
+#    generate_sequence() genererar en slumpmässig sekvens av siffror och play_memory_game() är huvudfunktionen som kör spelet.
+#    I play_memory_game() får spelaren först ange längden på sekvensen som ska memoreras. 
+#    Därefter genereras en slumpmässig sekvens av siffror som spelaren ska memorera. Efter att spelaren har memorerat sekvensen 
+#    får hen försöka återskapa den genom att skriva in siffrorna.
+#    Spelet fortsätter tills spelaren har gissat rätt sekvens eller gjort 15 försök.
+#    Funktionerna count_correct_positions() och count_correct_numbers() används för att räkna antal siffror på rätt plats respektive antal siffror som finns med i sek
+#    Funktionen clear_screen() används för att rensa terminalen mellan varje gissning.
+#    Programmet körs genom att anropa play_memory_game().
+#    Programmet är skrivet i Python 3.9.1 och testat på Windows 10.
+
 
 #   clear_screen() är en funktion som rensar terminalen 
 def clear_screen():
